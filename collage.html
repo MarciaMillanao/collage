@@ -1,0 +1,75 @@
+<!--aca va mi codigo html que aplicare drag and drop-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collage</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/css/collage.css">
+</head>
+<body>
+
+  <!-- cajas contenedoras 4 -->
+  <div class="container-fluid top">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3>Drag and Drop</h3>
+      </div>
+    </div>
+  </div>
+
+  <section class="container fondo_contenedor_fotos" >
+    <div class="row">
+      <div class="col-lg-3 contenedor_fotos" id="contiene1" ondragover="dragDrop(event)" ondrop="drop(event)">
+      </div>
+      <div class="col-lg-3 contenedor_fotos" id="contiene2" ondragover="dragDrop(event)" ondrop="drop(event)">
+      </div>
+      <div class="col-lg-3 contenedor_fotos" id="contiene3" ondragover="dragDrop(event)" ondrop="drop(event)">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 contenedor_fotos" id="contiene4" ondragover="dragDrop(event)" ondrop="drop(event)">
+      </div>
+      <div class="col-lg-3 contenedor_fotos" id="contiene5" ondragover="dragDrop(event)" ondrop="drop(event)">
+      </div>
+      <div class="col-lg-3 contenedor_fotos" id="contiene6" ondragover="dragDrop(event)" ondrop="drop(event)">
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid division text-center">
+    <p>Arrasta las fotos para Transferir</p>
+  </div>
+
+  <section class="container photos">
+    <div class="row">
+      <div class="col-sm-4 col-xs-4 text-center">
+        <img class="img-responsive" draggable="true" ondragstart="drag(event)" src="src/img/paisaje_6.jpg" alt="" id="food1">
+      </div>
+      <div class="col-sm-4 col-xs-4 text-center">
+        <img class="img-responsive" draggable="true" ondragstart="drag(event)" src="src/img/paisaje_2.jpg" alt="" id="food2">
+      </div>
+      <div class="col-sm-4 col-xs-4 text-center">
+        <img class="img-responsive" draggable="true" ondragstart="drag(event)" src="src/img/paisaje_3.jpg" alt="" id="food3">
+      </div>      
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-xs-4 text-center">
+        <img class="img-responsive" draggable="true" ondragstart="drag(event)" src="src/img/paisaje_1.jpg" alt="" id="food4">
+      </div>
+      <div class="col-sm-4 col-xs-4 text-center">
+        <img class="img-responsive" draggable="true" ondragstart="drag(event)" src="src/img/paisaje_4.jpg" alt="" id="food5">
+      </div>
+      <div class="col-sm-4 col-xs-4 text-center">
+        <img class="img-responsive" draggable="true" ondragstart="drag(event)" src="src/img/paisaje_5.jpg" alt="" id="food6">
+      </div>      
+    </div>
+  </section>  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/8f8db047c3.js"></script>
+  <script src="src/js/main.js"></script>
+</body>
+</html>

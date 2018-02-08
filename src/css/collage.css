@@ -1,0 +1,40 @@
+.fondo_contenedor_fotos{
+  background-color: lightgray;
+  padding: 2% 0% 2% 14%;
+}
+
+.photos{
+  padding: 2% 2% 2% 6%;
+}
+
+img{
+  margin:2%;
+}
+
+.contenedor_fotos{
+  min-height: 150px;
+  border: 2px solid #fff;
+  padding: 2%;
+  margin: 5px;
+}
+
+.top{
+  background-color: #26272b;
+  line-height: 30px;
+  color: #fff;
+}
+
+.division{
+  background-color: #26272b;
+  line-height: 50px;
+  color: #3d5a6f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.bottom{
+  background-color: #26272b;
+  line-height: 30px;
+  font-size: 10px;
+  color: gray;
+}
